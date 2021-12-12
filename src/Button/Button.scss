@@ -1,0 +1,79 @@
+@import '../sassvariables.scss';
+button {
+  &.default {
+    display: flex;
+    align-items: center;
+    background: $c-black;
+    color: $c-white;
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 8px 14px;
+    border: 1px solid $c-black;
+    margin: 2px;
+    cursor: pointer;
+    > span {
+      font-size: 16px;
+      margin: 0px 2px;
+      cursor: pointer;
+    }
+    label {
+      font-size: 12px;
+      font-weight: 600;
+      margin: 0px 2px;
+      cursor: pointer;
+    }
+    &:hover {
+      background: $c-blue;
+      border: 1px solid $c-blue;
+    }
+    &:active {
+      background: $c-activeblue;
+      border: 1px solid $c-activeblue;
+    }
+    &.disabled {
+      background: $c-grey;
+      border: 1px solid $c-grey;
+    }
+    &.icon-right {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    &.dark {
+      background: $c-white;
+      color: $c-black;
+      &:hover {
+        color: $c-white;
+        background: $c-blue;
+        border: 1px solid $c-blue;
+      }
+      &:active {
+        color: $c-white;
+        background: $c-blue;
+        border: 1px solid $c-activeblue;
+      }
+    }
+    &.large {
+      padding: 10px 16px;
+    }
+    &.small {
+      padding: 6px 10px;
+    }
+    &.xsmall {
+      padding: 4px 8px;
+    }
+    &.Outline {
+      background: $c-white;
+      color: $c-black;
+      &:hover {
+        color: $c-blue;
+        background: $c-white;
+        border: 1px solid $c-blue;
+      }
+      &:active {
+        color: $c-activeblue;
+        border: 1px solid $c-activeblue;
+        background-color: $c-outlineactive;
+      }
+    }
+  }
+}
